@@ -1,0 +1,33 @@
+//Criação de Constante de Produtos
+const Lapis = {
+    produto: "Lápis 1",
+    marca: "FaberCastell",
+    AtivoEstoque: true,
+    valor: 2
+};
+
+const Caderno = {
+    produto: "Caderno 2",
+    marca: "Tilibra",
+    AtivoEstoque: true,
+    valor: 10
+};
+
+const Mochila = {
+    produto: "Mochila 2",
+    marca: "JanSport",
+    AtivoEstoque: false,
+    valor: 50
+};
+
+//Criar a variável para pegar as informações necessárias referente a Constante
+let produtos =[Lapis, Caderno, Mochila];
+
+//Variavel para somar os valores dos produtos
+let SomaValor = 0
+
+//Criação do for para gerar um loop para que possa percorrer as informações
+for (produto of produtos) {
+    //if (produto.AtivoEstoque === true) {
+    SomaValor += produto.valor;
+console.log("O valor é de:  " + SomaValor);
